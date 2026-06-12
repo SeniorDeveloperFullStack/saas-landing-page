@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Navbar } from "@/app/_components/navbar";
 import { PageHero } from "@/app/_components/page-hero";
 import { SectionHeading } from "@/app/_components/section-heading";
@@ -53,6 +54,12 @@ export default function CaseStudiesPage() {
                 <p className="mt-8 rounded-2xl bg-slate-950 px-4 py-3 text-sm font-semibold text-cyan-200">
                   {study.outcome}
                 </p>
+                <Link
+                  href={`/case-studies/${study.slug}`}
+                  className="mt-6 inline-flex text-sm font-bold text-slate-950 transition hover:text-cyan-700"
+                >
+                  Read case study
+                </Link>
               </article>
             ))}
           </div>

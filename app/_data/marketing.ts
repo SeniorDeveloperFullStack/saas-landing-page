@@ -248,28 +248,91 @@ export const featurePillars = [
 
 export const caseStudies = [
   {
-    company: "Northstar",
-    segment: "Mid-market B2B SaaS",
+    company: "Acme Support",
+    slug: "acme-support",
+    segment: "Customer support SaaS",
     title: "Created one renewal command center for sales and success.",
     outcome: "42% faster renewal preparation",
     summary:
-      "Northstar used the PulseDesk concept to align account notes, risk indicators, and executive summaries before weekly pipeline reviews.",
+      "Acme Support used the PulseDesk concept to align account notes, risk indicators, and executive summaries before weekly pipeline reviews.",
   },
   {
-    company: "Capsule",
-    segment: "Product-led SaaS",
+    company: "Nova Retail",
+    slug: "nova-retail",
+    segment: "Retail operations platform",
     title: "Routed expansion intent before high-fit customers went quiet.",
     outcome: "$480K mock expansion surfaced",
     summary:
-      "Capsule mapped product usage and support sentiment into a simple expansion queue for revenue leaders.",
+      "Nova Retail mapped product usage and support sentiment into a simple expansion queue for revenue leaders.",
   },
   {
-    company: "Horizon",
-    segment: "Enterprise software",
+    company: "BrightScale",
+    slug: "brightscale",
+    segment: "Enterprise analytics",
     title: "Standardized onboarding visibility across implementation pods.",
     outcome: "18 hours saved weekly",
     summary:
-      "Horizon gave onboarding leaders a single view of delayed milestones, stakeholder gaps, and launch readiness.",
+      "BrightScale gave onboarding leaders a single view of delayed milestones, stakeholder gaps, and launch readiness.",
+  },
+];
+
+export const caseStudyDetails = [
+  {
+    slug: "acme-support",
+    company: "Acme Support",
+    industry: "Customer support SaaS",
+    headline: "How Acme Support unified renewal risk across sales and success.",
+    problem:
+      "Acme Support had renewal notes, support sentiment, and product adoption data spread across too many tools. Leaders could not tell which accounts needed attention before pipeline meetings.",
+    solution:
+      "PulseDesk organized account health, support trends, and expansion signals into a shared renewal workspace with owner routing and executive-ready summaries.",
+    results: [
+      { value: "42%", label: "faster renewal preparation" },
+      { value: "31", label: "at-risk accounts prioritized" },
+      { value: "$620K", label: "mock revenue surfaced for review" },
+    ],
+    quote:
+      "PulseDesk gave our teams one calm place to understand customer risk before the renewal conversation started.",
+    quoteName: "Maya Chen",
+    quoteRole: "VP Revenue, Acme Support",
+  },
+  {
+    slug: "nova-retail",
+    company: "Nova Retail",
+    industry: "Retail operations platform",
+    headline: "How Nova Retail turned expansion intent into a weekly revenue motion.",
+    problem:
+      "Nova Retail saw strong product usage in high-fit accounts, but sales and customer success lacked a shared workflow for acting on those signals quickly.",
+    solution:
+      "PulseDesk created a mock expansion queue that combined usage moments, stakeholder activity, and customer health into a prioritized weekly action plan.",
+    results: [
+      { value: "3.4x", label: "more expansion visibility" },
+      { value: "18 hrs", label: "saved in weekly account review" },
+      { value: "24", label: "high-intent accounts routed" },
+    ],
+    quote:
+      "The expansion workflow made our strongest customer signals visible without asking every team to build another spreadsheet.",
+    quoteName: "Jordan Ellis",
+    quoteRole: "Revenue Operations Lead, Nova Retail",
+  },
+  {
+    slug: "brightscale",
+    company: "BrightScale",
+    industry: "Enterprise analytics",
+    headline: "How BrightScale standardized onboarding visibility for enterprise launches.",
+    problem:
+      "BrightScale implementation teams were tracking onboarding milestones differently by pod, making launch risk difficult to explain to leadership.",
+    solution:
+      "PulseDesk modeled launch readiness, blocked milestones, stakeholder engagement, and handoff ownership in one onboarding command center.",
+    results: [
+      { value: "27%", label: "fewer delayed milestones" },
+      { value: "91%", label: "launch readiness visibility" },
+      { value: "12", label: "implementation pods aligned" },
+    ],
+    quote:
+      "PulseDesk made onboarding feel measurable. We could finally explain what was blocked, who owned it, and what changed week to week.",
+    quoteName: "Avery Stone",
+    quoteRole: "COO, BrightScale",
   },
 ];
 
