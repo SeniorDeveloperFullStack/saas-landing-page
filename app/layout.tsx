@@ -13,9 +13,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PulseDesk | SaaS Customer Operations Platform",
+  title: "PulseDesk | Customer Operations Platform for SaaS Teams",
   description:
-    "A polished SaaS landing page portfolio project for a customer operations platform.",
+    "PulseDesk is a production-style SaaS marketing website concept for customer operations, lifecycle automation, revenue intelligence, and executive reporting.",
+  keywords: [
+    "PulseDesk",
+    "SaaS landing page",
+    "customer operations",
+    "revenue intelligence",
+    "customer success",
+  ],
 };
 
 export default function RootLayout({
