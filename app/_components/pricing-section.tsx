@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { comparisonRows, pricingPlans } from "@/app/_data/marketing";
 import { SectionHeading } from "@/app/_components/section-heading";
@@ -96,8 +97,8 @@ export function PricingSection() {
                     </li>
                   ))}
                 </ul>
-                <a
-                  href={plan.cta === "Book demo" ? "#demo" : "#demo"}
+                <Link
+                  href={plan.cta === "Book demo" ? "/contact" : "/pricing"}
                   className={`mt-8 inline-flex w-full justify-center rounded-full px-5 py-3 text-sm font-bold transition ${
                     plan.highlighted
                       ? "bg-slate-950 text-white hover:bg-slate-800"
@@ -105,7 +106,7 @@ export function PricingSection() {
                   }`}
                 >
                   {plan.cta}
-                </a>
+                </Link>
               </article>
             );
           })}

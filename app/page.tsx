@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { DashboardPreview } from "@/app/_components/dashboard-preview";
 import { DemoForm } from "@/app/_components/demo-form";
 import { FaqAccordion } from "@/app/_components/faq-accordion";
@@ -5,6 +6,7 @@ import { Navbar } from "@/app/_components/navbar";
 import { PricingSection } from "@/app/_components/pricing-section";
 import { RoiCalculator } from "@/app/_components/roi-calculator";
 import { SectionHeading } from "@/app/_components/section-heading";
+import { SiteFooter } from "@/app/_components/site-footer";
 import { UseCaseTabs } from "@/app/_components/use-case-tabs";
 import {
   customerMetrics,
@@ -32,7 +34,7 @@ export default function Home() {
       <RoiCalculator />
       <FaqAccordion />
       <DemoForm />
-      <Footer />
+      <SiteFooter />
     </main>
   );
 }
@@ -57,18 +59,18 @@ function HeroSection() {
             revenue visibility.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="#pricing"
+            <Link
+              href="/pricing"
               className="rounded-full bg-cyan-400 px-6 py-3 text-center text-sm font-bold text-slate-950 shadow-lg shadow-cyan-500/25 transition hover:bg-cyan-300"
             >
               Start free
-            </a>
-            <a
-              href="#demo"
+            </Link>
+            <Link
+              href="/contact"
               className="rounded-full border border-white/15 px-6 py-3 text-center text-sm font-bold text-white transition hover:border-white/40"
             >
               Book demo
-            </a>
+            </Link>
           </div>
           <div className="mt-10 grid max-w-2xl gap-6 border-t border-white/10 pt-8 sm:grid-cols-3">
             {heroMetrics.map((metric) => (
@@ -257,32 +259,5 @@ function SecuritySection() {
         </div>
       </div>
     </section>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="border-t border-white/10 bg-slate-950 px-6 py-10 text-slate-400 lg:px-8">
-      <div className="mx-auto flex max-w-7xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p className="text-lg font-semibold text-white">PulseDesk</p>
-          <p className="mt-2 text-sm">Mock SaaS landing page portfolio project.</p>
-        </div>
-        <div className="flex flex-wrap gap-5 text-sm">
-          <a href="#features" className="transition hover:text-white">
-            Features
-          </a>
-          <a href="#pricing" className="transition hover:text-white">
-            Pricing
-          </a>
-          <a href="#faq" className="transition hover:text-white">
-            FAQ
-          </a>
-          <a href="#demo" className="transition hover:text-white">
-            Book demo
-          </a>
-        </div>
-      </div>
-    </footer>
   );
 }

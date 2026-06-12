@@ -1,9 +1,9 @@
 export const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "Workflow", href: "#workflow" },
-  { label: "Integrations", href: "#integrations" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Features", href: "/features" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Case studies", href: "/case-studies" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const trustedBy = [
@@ -220,4 +220,80 @@ export const faqs = [
     answer:
       "PulseDesk is a mock customer operations platform for revenue, onboarding, and customer success teams.",
   },
+];
+
+export const featurePillars = [
+  {
+    eyebrow: "Signal layer",
+    title: "Unify every revenue and customer touchpoint.",
+    description:
+      "PulseDesk models account activity from CRM, billing, support, product analytics, and success notes in one timeline.",
+    bullets: ["Account health scoring", "Lifecycle stage mapping", "Risk and intent signals"],
+  },
+  {
+    eyebrow: "Workflow layer",
+    title: "Turn messy handoffs into repeatable plays.",
+    description:
+      "Teams can route renewal, onboarding, save, and expansion motions with clear ownership and measurable outcomes.",
+    bullets: ["Playbook templates", "Owner routing", "SLA-friendly task views"],
+  },
+  {
+    eyebrow: "Reporting layer",
+    title: "Make leadership updates feel calm and precise.",
+    description:
+      "Executive views connect customer motion to protected revenue, expansion opportunity, adoption, and operational capacity.",
+    bullets: ["Board-ready metrics", "Segment reporting", "Forecast confidence cues"],
+  },
+];
+
+export const caseStudies = [
+  {
+    company: "Northstar",
+    segment: "Mid-market B2B SaaS",
+    title: "Created one renewal command center for sales and success.",
+    outcome: "42% faster renewal preparation",
+    summary:
+      "Northstar used the PulseDesk concept to align account notes, risk indicators, and executive summaries before weekly pipeline reviews.",
+  },
+  {
+    company: "Capsule",
+    segment: "Product-led SaaS",
+    title: "Routed expansion intent before high-fit customers went quiet.",
+    outcome: "$480K mock expansion surfaced",
+    summary:
+      "Capsule mapped product usage and support sentiment into a simple expansion queue for revenue leaders.",
+  },
+  {
+    company: "Horizon",
+    segment: "Enterprise software",
+    title: "Standardized onboarding visibility across implementation pods.",
+    outcome: "18 hours saved weekly",
+    summary:
+      "Horizon gave onboarding leaders a single view of delayed milestones, stakeholder gaps, and launch readiness.",
+  },
+];
+
+export const teamValues = [
+  {
+    title: "Operator-first design",
+    description:
+      "Every section is written around the realities of customer teams: handoffs, renewals, risk, expansion, and reporting.",
+  },
+  {
+    title: "Implementation awareness",
+    description:
+      "The frontend stays mock-only, but the content and component boundaries anticipate future APIs and real data models.",
+  },
+  {
+    title: "Calm executive clarity",
+    description:
+      "PulseDesk is positioned as a product that makes messy revenue motion easier to explain, prioritize, and trust.",
+  },
+];
+
+export const contactReasons = [
+  "Review a mock implementation plan",
+  "Walk through the customer operations model",
+  "Discuss frontend architecture and extension points",
+  "Map a future backend, auth, and payment roadmap",
 ];
